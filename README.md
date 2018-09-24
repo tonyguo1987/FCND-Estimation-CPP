@@ -2,12 +2,12 @@
 This is one of my Udacity Nanodegree project of Flying cars.
 
 Here are the contents of this project:
-- [Task 1: Sensor Noise](## Task 1: Sensor Noise)
-- [Task 2: Attitude Estimation](# Task 2: Attitude Estimation)
-- [Task 3: Prediction Step](# Task 3: Prediction Step)
-- [Task 4: Magnetometer Update](# Task 4: Magnetometer Update)
-- [Task 5: Closed Loop + GPS Update](# Task 5: Closed Loop + GPS Update)
-- [Task 6: Adding Your Controller](# Task 6: Adding Your Controller)
+- Task 1: Sensor Noise
+- Task 2: Attitude Estimation
+- Task 3: Prediction Step
+- Task 4: Magnetometer Update
+- Task 5: Closed Loop + GPS Update
+- Task 6: Adding Your Controller
 
 
 ## Task 1: Sensor Noise ##
