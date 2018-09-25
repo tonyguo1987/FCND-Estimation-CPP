@@ -24,7 +24,7 @@ Here are the contents of this project:
 </p>
 
 
-## Task 2: Attitude Estimation##
+## Task 2: Attitude Estimation ##
 
 1. **Advanced gyro integration:**
 An advanced gyro integration is implemented in `UpdateFromIMU()`, where a quaternion is first created using current estimated attitude in order to integrate gyro rate in its body frame. After integration, extract integrated pqr and transform them back to world frame.
@@ -35,7 +35,7 @@ An advanced gyro integration is implemented in `UpdateFromIMU()`, where a quater
 <img src="images/task2.PNG" width="500"/>
 </p>
 
-## Task 3: Prediction Step##
+## Task 3: Prediction Step ##
 1. **State prediction implementation:**
 State prediction is done in `PredictState()` by simple integration of the drone's state vector.
 2. When running scenario 8, we should see the estimator state track the actual state, with only reasonably slow drift, as shown in the figure below:
@@ -54,7 +54,7 @@ Create `gPrime` matrix in order to update covariance.
 <img src="images/task4.PNG" width="500"/>
 </p>
 
-## Task 4: Magnetometer Update##
+## Task 4: Magnetometer Update ##
 
 1. **Magnetometer update implementation:**
 This is done by implementing the `hPrime` for updating yaw in function `UpdateFromMag()`. A range check of the difference in measured yaw and estimated yaw is also added. When running senario 10, the yaw error reduced greatly and is now able to stay less than +/-0.1 rad for more than 10 seconds, as shown in the following figure.
@@ -62,7 +62,7 @@ This is done by implementing the `hPrime` for updating yaw in function `UpdateFr
 <img src="images/task5.PNG" width="500"/>
 </p>
 
-## Task 5: Closed Loop + GPS Update##
+## Task 5: Closed Loop + GPS Update ##
 1. **GPS Update:**
 This is simply done by implementing `UpdateFromGPS()`, where `hPrime` matrix is computed for updating the drone's position and velocity.
 
@@ -72,5 +72,5 @@ The entire simulation of scenario 11 using an unideal estimator is shown in the 
 <img src="images/task6.PNG" width="500"/>
 </p>
 
-## Task 6: Adding Your Controller##
+## Task 6: Adding Your Controller ##
 Actually all the screenshots I showed so far were captured when using my own Controller from my previous project. All scenarios passed the success criteria although the flying trajectory is still a bit far from perfect.
